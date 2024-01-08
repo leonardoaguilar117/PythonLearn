@@ -23,4 +23,4 @@ def generateQR(directory, URL):
 
 if __name__ == "__main__":
     generateQR("C:/Users/leona/Downloads/Python/image.png",
-               "No mames, como me gustas y te haces la dificil :/")
+               "https://drive.google.com/file/d/1sud98eOgkpipLbEPf98YuJrbkWtZKGG5/view?usp=sharing")

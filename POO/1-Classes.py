@@ -4,6 +4,11 @@ class Stack():
     def __init__(self):
         self.stack = []
 
+    # destructor
+    def __delattr__(self):
+        return print("Deleted")
+
+    # methods
     def push(self, item):
         self.stack.append(item)
 
@@ -38,7 +43,7 @@ if __name__ == "__main__":
 
     for i in range(0, 6):
         Stack_A.push(i)
-    print("Elementos insertados")
+    print("Elements inserted")
 
     Stack_A.pop()
     Stack_A.pop()
