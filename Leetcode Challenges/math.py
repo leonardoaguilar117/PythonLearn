@@ -28,10 +28,10 @@ eqInT = firstSubstution.sub(reemplazar, mainEquation)
 equation = sp.sympify(eqInT)
 
 # Mostramos la func principal, el resultado con cambio de variable y el resultado de la integral
-print("Ecuación principal: ", mainEquation)
+print("Función principal: ", mainEquation)
 print("Primera sustitución: ", eqInT)
-print("Resultado integración: ")
 tIntegrate = sp.integrate(equation, t)
+print("Resultado integración: ", tIntegrate)
 tIntegrateSympObj = str(tIntegrate)
 
 # Volvemos a sustituir pero en este caso todas las t en el cambio de variable
